@@ -15,9 +15,9 @@
 		<link rel="modulepreload" href="./_app/immutable/chunks/stores.42a93321.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/hind-page.svelte.29ff6f40.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/hind-page.js.9c5eea7e.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_page.fca24c55.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/future-page.svelte.0eda348a.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/future-page.js.9c5eea7e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_page.da46b06b.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -27,22 +27,19 @@
 
 	<nav class="svelte-1u9z1tp"><svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-1u9z1tp"><path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" class="svelte-1u9z1tp"></path></svg>
 		<ul class="svelte-1u9z1tp"><li class="svelte-1u9z1tp"><a href="/" class="svelte-1u9z1tp">Hind</a></li>
-			<li class="svelte-1u9z1tp"><a href="/future" class="svelte-1u9z1tp">Tuleviku hind</a></li>
+			<li aria-current="page" class="svelte-1u9z1tp"><a href="/future" class="svelte-1u9z1tp">Tuleviku hind</a></li>
 			<li class="svelte-1u9z1tp"><a href="/about" class="svelte-1u9z1tp">About</a></li></ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-1u9z1tp"><path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" class="svelte-1u9z1tp"></path></svg></nav>
 
 	<div class="corner svelte-1u9z1tp"><a href="https://github.com/sveltejs/kit" class="svelte-1u9z1tp"><img src="/_app/immutable/assets/github.1ea8d62e.svg" alt="GitHub" class="svelte-1u9z1tp"></a></div>
 </header>
 
-	<main class="svelte-8o1gnw"><section><div>Tere</div>
-	<p>Lae oma tarbimise fail: <input type="file" id="consumtion-file"></p>
-	<p>Total consumed: 0 kwH, hours 0, days 0 <br>
-		Total price (no vat): 0 EUR, kwh avg NaN EUR <br>
-		Total price (vat): 0 EUR, kwh avg NaN EUR
-	</p>
-	<table border="1" cellpadding="0" cellspacing="0"><thead><tr><th>Tund</th><th>Hind</th><th>Hind + km</th><th>consumed</th><th>Hind kokku</th></tr></thead>
-		<tbody></tbody></table>
-</section></main>
+	<main class="svelte-8o1gnw"><section><p>Võrgutasu päev: <input type="number" value="3.6900000000000004">
+		Võrgutasu öö: <input type="number" value="2.1">
+		Taastuvenergia tasu: <input type="number" value="1.24"></p>
+	<p>Hinnad on senti kwh kohta</p>
+	<table border="1" cellpadding="0" cellspacing="0"><thead><tr><th>Tund</th><th>Hind</th><th>Hind + km</th><th>Hind + võrk + taastuv</th></tr></thead>
+		<tbody></tbody></table></section></main>
 
 	<footer class="svelte-8o1gnw"><p>visit <a href="https://kit.svelte.dev" class="svelte-8o1gnw">kit.svelte.dev</a> to learn SvelteKit</p></footer>
 </div>
@@ -64,7 +61,7 @@
 						import("./_app/immutable/entry/app.a6a03607.js")
 					]).then(([kit, app]) => {
 						kit.start(app, __sveltekit_ztx3i0.element, {
-							node_ids: [0, 5],
+							node_ids: [0, 4],
 							data,
 							form: null,
 							error: null
